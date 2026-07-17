@@ -1,0 +1,13 @@
+class Solution {
+    public int reverse(int x) {
+        int original=x;
+        int n,rev=0;
+        
+        while(original>0 || original<0){
+        n=original%10;
+        rev=rev*10+n;
+        original=original/10;
+        }
+        return rev;
+    }
+}
